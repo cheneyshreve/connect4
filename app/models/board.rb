@@ -21,9 +21,11 @@ class Board < ApplicationRecord
     marker = self.turn_count.even? ? marker = "X" : marker = "O"
     self.total_turns += 1
     column -= 1 #starts at index 0
+    # populate the markers with row,col position
     x = 5
     until self.board[x][column] == " "
-      x -= 1
+       return if x == -6
+       x -= 1
     end
     self.board[x][column] = marker
     [x, column]

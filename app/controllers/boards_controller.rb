@@ -1,5 +1,6 @@
 class BoardsController < ApplicationController
 
+  # define a new game
   def new
     @game = Board.new
     @board = @game.board
@@ -7,6 +8,7 @@ class BoardsController < ApplicationController
     @game.save
   end
 
+  # update game based on status. If total_turns > 42 then there's a draw.
   def update
     @game = Board.find(params[:id])
     column = board_params.to_i
