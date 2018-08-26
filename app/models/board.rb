@@ -1,5 +1,4 @@
 class Board < ApplicationRecord
-  # attr_accessor :board, :position, :turn_count
 
   def initialize
     super
@@ -7,14 +6,17 @@ class Board < ApplicationRecord
     self.total_turns = 0
   end
 
+  # define board
   def board
     [self.row1, self.row2, self.row3, self.row4, self.row5, self.row6]
   end
 
+  # assign player_number
   def player_number
     self.turn_count.even? ? 1 : 2
   end
 
+  # fill row,column with an X or O depending on player_number and column selected
   def place_marker(column)
     marker = self.turn_count.even? ? marker = "X" : marker = "O"
     self.total_turns += 1

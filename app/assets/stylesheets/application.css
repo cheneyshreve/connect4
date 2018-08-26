@@ -17,7 +17,7 @@
  .cell {
    height: 100px;
    width: 100px;
-   background-color: #1f5fc6;
+   background-color: #1fc6af;
    display: inline-block;
    margin: -2px;
  }
@@ -29,14 +29,14 @@
  }
 
  .button {
-     font-size: 18px;
+     font-size: 24px;
      width: 50px;
-     background-color: #6ed8b7;
+     background-color: #751254;
      color: white;
-     border: none;
-     box-shadow: 2px 2px #60a590;
      border-radius: 10%;
+     cursor: pointer;
  }
+
 
  .row .col {
    padding: 0;
@@ -57,10 +57,11 @@
 
  .container {
    text-align: center;
+   margin: 0 auto 0 auto;
  }
 
  .board {
-   margin-top: 50px;
+   margin-top: 1rem;
  }
 
  body {
