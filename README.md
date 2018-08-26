@@ -14,4 +14,4 @@ The code for styling for the connect4 board was modified after this [blog post](
 
 Next steps: This project had a day-long time limit. If not restricted by time, I'd add messaging in to warn users when they were clicking an unavailable cell and other styling to and instructions to make the project more engaging.
 
-# Live version
+[Live version](https://still-bayou-11896.herokuapp.com/) 
